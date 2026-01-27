@@ -1,11 +1,11 @@
 ## CUSTOMER TABLE
 
 ```sql
-create table custumers(
-custumer_id varchar(100) primary key,
-custumerprefix_code int,
-custumer_city varchar,
-custumer_state varchar(10)
+create table customers(
+customer_id varchar(100) primary key,
+customerprefix_code int,
+customer_city varchar,
+customer_state varchar(10)
 );
 ```
 ---
@@ -38,7 +38,7 @@ order_approved_at timestamp,
 order_delivered_carrier_date timestamp,
 order_delivered_customer_date timestamp,
 order_estimated_delivery_date date,
-constraint fk_custumer_id foreign key(custumer_id) references custumers(custumer_id)
+constraint fk_customer_id foreign key(customer_id) references customers(customer_id)
 );
 );
 ```
