@@ -33,6 +33,23 @@ limit 1;
 
 ## 4. What percentage of orders were delivered late?
 Shows how often delivery promises were not met.
+```sql
+SELECT ROUND( 100.0 * SUM(
+            CASE 
+                WHEN order_delivered_customer_date > order_estimated_delivery_date 
+                THEN 1 ELSE 0 
+            END
+        ) 
+        / COUNT(order_id),2) AS percent_late_orders
+FROM orders
+WHERE order_delivered_customer_date IS NOT NULL;
+```
 
 ## 5. What is the average freight cost per order?
 Analyzes shipping costs and their impact on overall expenses.
+```sql
+select avg(order_freight) from (select o.order_id ,sum(oi.freight_value) as order_freight from 
+orders o left join order_items oi
+on o.order_id=oi.order_id
+group by o.order_id) as freight_per_order ;
+```
