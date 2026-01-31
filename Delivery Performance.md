@@ -35,6 +35,7 @@ order by average_dilvery_delay asc
 limit 1;
 ```
 **OUTPUT**
+<img width="430" height="86" alt="{18AFEBF6-03DF-4C50-A2F8-AC7831BB741C}" src="https://github.com/user-attachments/assets/f1fa8752-7306-49ca-8161-d386d20149a8" />
 
 ---
 ## 4. What percentage of orders were delivered late?
