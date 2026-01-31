@@ -11,6 +11,9 @@ group by c.customer_id
 order by total_revenue desc
 limit 5;
 ```
+**OUTPUT**
+<img width="467" height="205" alt="{F0EF2512-D59F-422A-B17E-D647CD78DEC5}" src="https://github.com/user-attachments/assets/de3b6f30-79bd-4e92-9bba-82c023299af9" />
+
 
 ## 2.How many customers are repeat buyers?
 Shows customer loyalty and retention by counting customers who placed more than one order.
