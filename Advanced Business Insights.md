@@ -49,7 +49,7 @@ group by product_category_name
 order by revenue desc , rating asc;
 ```
 **OUTPUT**
-screenshots/{D27FE45D-B76E-409E-B50B-2BCFC4360ABA}.png
+![](screenshots/{D27FE45D-B76E-409E-B50B-2BCFC4360ABA}.png)
 ---
 
 ## 4. How does delivery time affect customer satisfaction?
