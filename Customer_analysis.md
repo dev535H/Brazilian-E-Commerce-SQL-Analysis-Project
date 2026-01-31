@@ -55,3 +55,5 @@ order by revenue desc
 limit 1;
 ```
 **OUTPUT**
+<img width="326" height="85" alt="{C1D8F7EC-8AE4-4F96-BEC0-BD94697166BD}" src="https://github.com/user-attachments/assets/1f427058-a9cd-4baa-8d04-31d84d407273" />
+
