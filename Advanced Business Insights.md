@@ -34,9 +34,29 @@ limit 10;
 
 ## 30. Which product categories have high sales but low ratings?
 Identifies “risk categories” that sell well but may hurt customer satisfaction.
+```sql
+select p.product_category_name,round(sum(oi.price+oi.freight_value),2) as revenue, round(avg(review_score),2) as rating 
+from order_items oi join reviews r 
+on oi.order_id=r.order_id
+join products p
+on p.product_id=oi.product_id
+group by product_category_name
+order by revenue desc , rating asc;
+```
+---
 
 ## 31. How does delivery time affect customer satisfaction?
 Examines whether longer delivery times reduce review scores.
+```sql
+select extract(day from order_delivered_customer_date-order_purchase) as delay_date,round(avg(review_score),2) as rating,
+count(*) as total_orders
+from orders o join reviews r
+on o.order_id=r.order_id
+where order_delivered_customer_date is not null
+group by extract(day from order_delivered_customer_date-order_purchase) 
+order by delay_date desc;
+```
+---
 
 ## 32. Which state generates the highest revenue per customer?
 Combines geographic and financial data to measure customer value by region.
