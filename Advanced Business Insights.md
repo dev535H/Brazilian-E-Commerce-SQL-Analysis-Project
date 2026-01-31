@@ -48,7 +48,8 @@ on p.product_id=oi.product_id
 group by product_category_name
 order by revenue desc , rating asc;
 ```
-*OUTPUT*
+**OUTPUT**
+screenshots/{D27FE45D-B76E-409E-B50B-2BCFC4360ABA}.png
 ---
 
 ## 4. How does delivery time affect customer satisfaction?
