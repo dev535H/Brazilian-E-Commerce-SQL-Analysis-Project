@@ -33,6 +33,8 @@ order by total_revenue desc
 limit 10;
 ```
 *OUTPUT*
+<img width="481" height="204" alt="{469A3596-1EB7-4CC8-8FAE-8FC529CDD95D}" src="https://github.com/user-attachments/assets/27686a4f-703b-4340-b83e-afc44f9faf7c" />
+
 ---
 
 ## 3. Which product categories have high sales but low ratings?
