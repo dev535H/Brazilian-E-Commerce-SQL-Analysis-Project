@@ -64,3 +64,5 @@ on o.order_id=oi.order_id
 group by o.order_id) as freight_per_order ;
 ```
 **OUTPUT**
+<img width="247" height="81" alt="{84FBA779-4D0A-434E-B55E-8C44FF0B84DC}" src="https://github.com/user-attachments/assets/7a5d25f8-5af7-417d-8206-9fddcad8ebb6" />
+
