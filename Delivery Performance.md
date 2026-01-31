@@ -5,6 +5,8 @@ Measures logistics efficiency by calculating the time between purchase and deliv
 select avg(order_delivered_customer_date-order_purchase) as avrage_time
 from orders;
 ```
+**OUTPUT**
+![](screenshots/{6EDDD1EF-D4BD-4D96-B2BA-FA4EF61F6562}.png)
 ---
 ## 2. Which states have the fastest average delivery time?
 Highlights regions where delivery operations are most efficient.
@@ -17,7 +19,9 @@ group by c.customer_state
 order by average_dilvery desc
 limit 1;
 ```
+**OUTPUT**
 
+---
 ## 3. Which states experience the most delivery delays?
 Identifies areas with logistics challenges.
 ```sql
@@ -29,8 +33,9 @@ group by c.customer_state
 order by average_dilvery_delay asc
 limit 1;
 ```
+**OUTPUT**
 
-
+---
 ## 4. What percentage of orders were delivered late?
 Shows how often delivery promises were not met.
 ```sql
@@ -44,7 +49,9 @@ SELECT ROUND( 100.0 * SUM(
 FROM orders
 WHERE order_delivered_customer_date IS NOT NULL;
 ```
+**OUTPUT**
 
+---
 ## 5. What is the average freight cost per order?
 Analyzes shipping costs and their impact on overall expenses.
 ```sql
@@ -53,3 +60,4 @@ orders o left join order_items oi
 on o.order_id=oi.order_id
 group by o.order_id) as freight_per_order ;
 ```
+**OUTPUT**
