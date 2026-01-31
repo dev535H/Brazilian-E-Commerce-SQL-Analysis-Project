@@ -6,7 +6,7 @@ This helps measure the overall business performance and the scale of transaction
 select sum(payment_value) from payments;
 ```
 **OUTPUT**
-screenshots/{79E8D336-C629-4E79-B38B-0282539058D8}.png
+![](screenshots/{79E8D336-C629-4E79-B38B-0282539058D8}.png)
 ---
 ## 2.What is the average order value (AOV)?
 A key business metric that shows how much customers spend per order on average.
