@@ -76,3 +76,5 @@ group by c.customer_state
 order by revenue_state desc;
 ```
 *OUTPUT*
+<img width="384" height="224" alt="{8A2D4757-6B60-4C7F-829F-A3D95C2B71B0}" src="https://github.com/user-attachments/assets/07b777c7-c442-4194-b7e6-5c5063e444b9" />
+
