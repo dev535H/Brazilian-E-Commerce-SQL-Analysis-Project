@@ -24,6 +24,9 @@ orders group by customer_id
 having count(customer_id)1
 );
 ```
+**OUTPUT**
+<img width="305" height="83" alt="{7F6F3AEC-68FF-4413-A656-C77F844303B7}" src="https://github.com/user-attachments/assets/bf71a145-6f42-4f1f-b1f8-1a2519bff697" />
+
 ---
 ## 3.Which states have the highest number of customers?
 Provides geographic insights into where most customers are located.
@@ -35,7 +38,7 @@ group by c.customer_state
 order by customer_count desc
 limit 1;
 ```
-
+**OUTPUT**
 ---
 ## 4.Which cities generate the highest revenue?
 Identifies high-performing cities that drive most of the sales
@@ -49,3 +52,4 @@ group by c.customer_city
 order by revenue desc
 limit 1;
 ```
+**OUTPUT**
