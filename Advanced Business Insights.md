@@ -56,6 +56,7 @@ where order_delivered_customer_date is not null
 group by extract(day from order_delivered_customer_date-order_purchase) 
 order by delay_date desc;
 ```
+**output**
 ---
 
 ## 5. Which state generates the highest revenue per customer?
