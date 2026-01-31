@@ -81,3 +81,14 @@ foreign key (order_id) references orders(order_id)
 );
 ```
 ---
+## REVIEW TABLE
+```SQL
+create table review(
+review_id varchar primary key,
+order_id varchar,
+review_score int,
+review_comment_title text,
+foreign key (order_id) references orders(order_id)
+);
+```
+---
