@@ -26,6 +26,7 @@ order by sum(payment_value)
 desc limit 10;
 ```
 **OUTPUT**
+<img width="281" height="548" alt="{9687ABED-150C-422C-971A-1379B175FF63}" src="https://github.com/user-attachments/assets/75c51ac2-0517-42aa-b069-173c1a275305" />
 
 ---
 ## 4.Which product categories generate the most revenue? 
@@ -41,6 +42,7 @@ order by sum(oi.price+freight_value) desc
 limit 1;
 ```
 **OUTPUT**
+<img width="281" height="548" alt="{9687ABED-150C-422C-971A-1379B175FF63}" src="https://github.com/user-attachments/assets/75c51ac2-0517-42aa-b069-173c1a275305" />
 
 ---
 ## 5. What is the monthly sales trend over time? 
@@ -66,4 +68,5 @@ order by total_revenue desc
 limit 1;
 ```
 **OUTPUT**
+
 
