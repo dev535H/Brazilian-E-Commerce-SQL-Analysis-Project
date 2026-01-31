@@ -57,7 +57,7 @@ group by extract(day from order_delivered_customer_date-order_purchase)
 order by delay_date desc;
 ```
 **output**
-![result](data-1769833872649.csv)
+![result](screenshots/{D7227A6F-04A6-4808-AF90-254379620BDA}.png)
 ---
 
 ## 5. Which state generates the highest revenue per customer?
