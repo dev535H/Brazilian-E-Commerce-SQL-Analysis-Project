@@ -1,6 +1,6 @@
 # 📈 Advanced Business Insights
 
-## 26. What is the customer retention rate?
+## 1. What is the customer retention rate?
 Measures how many customers return to make additional purchases.
 Retention Rate=(Repeat Customers/Total Customers)×100
 ```sql
@@ -21,7 +21,7 @@ FROM (
 ```
 
 
-## 28. What is the lifetime value of the top customers?
+## 2. What is the lifetime value of the top customers?
 Estimates total revenue contributed by the most valuable customers.
 ```sql
 select o.customer_id,sum(payment_value) as total_revenue from customers c join orders o on o.customer_id=c.customer_id join payments p on 
@@ -32,7 +32,7 @@ limit 10;
 ```
 ---
 
-## 30. Which product categories have high sales but low ratings?
+## 3. Which product categories have high sales but low ratings?
 Identifies “risk categories” that sell well but may hurt customer satisfaction.
 ```sql
 select p.product_category_name,round(sum(oi.price+oi.freight_value),2) as revenue, round(avg(review_score),2) as rating 
@@ -45,7 +45,7 @@ order by revenue desc , rating asc;
 ```
 ---
 
-## 31. How does delivery time affect customer satisfaction?
+## 4. How does delivery time affect customer satisfaction?
 Examines whether longer delivery times reduce review scores.
 ```sql
 select extract(day from order_delivered_customer_date-order_purchase) as delay_date,round(avg(review_score),2) as rating,
@@ -58,7 +58,7 @@ order by delay_date desc;
 ```
 ---
 
-## 32. Which state generates the highest revenue per customer?
+## 5. Which state generates the highest revenue per customer?
 Combines geographic and financial data to measure customer value by region.
 ```sql
 select c.customer_state as customer_state,round(sum(p.payment_value)/count(distinct c.customer_id),2) as revenue_state
