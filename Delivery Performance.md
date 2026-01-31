@@ -20,6 +20,7 @@ order by average_dilvery desc
 limit 1;
 ```
 **OUTPUT**
+<img width="427" height="89" alt="{8A02640C-8501-41C2-B4B8-95462FCC773C}" src="https://github.com/user-attachments/assets/44e5299e-cdc9-4b8e-aa77-7cbe24d49c4f" />
 
 ---
 ## 3. Which states experience the most delivery delays?
