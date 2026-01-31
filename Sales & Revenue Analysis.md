@@ -14,6 +14,7 @@ A key business metric that shows how much customers spend per order on average.
 select round(sum(payment_value)/count(distinct order_id),2) from payments;
 ```
 **OUTPUT**
+<img width="145" height="82" alt="{C9089940-9384-4EBE-9CE9-F99AB4D4BD1E}" src="https://github.com/user-attachments/assets/034f5f3f-5331-4e99-803a-c42de4ae9aa5" />
 
 ---
 ## 3.What are the top 10 highest revenue-generating products? 
