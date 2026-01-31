@@ -55,7 +55,7 @@ group by month
 order by month desc;
 ```
 **OUTPUT**
-
+![](screenshots/MONTLY SALES OVER TREND.png)
 ---
 ## 6. Which month had the highest number of orders? 
 Reveals peak shopping periods, useful for marketing and inventory planning.
@@ -68,5 +68,5 @@ order by total_revenue desc
 limit 1;
 ```
 **OUTPUT**
-
+![](screenshots/MONTLY SALES OVER TREND.png)
 
