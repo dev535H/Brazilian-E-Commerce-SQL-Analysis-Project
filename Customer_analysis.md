@@ -39,6 +39,8 @@ order by customer_count desc
 limit 1;
 ```
 **OUTPUT**
+<img width="395" height="87" alt="{55179646-9A15-4A7D-B483-565A29F81C3E}" src="https://github.com/user-attachments/assets/bd0b2015-c6de-40ae-a296-f901cd2e4fa1" />
+
 ---
 ## 4.Which cities generate the highest revenue?
 Identifies high-performing cities that drive most of the sales
