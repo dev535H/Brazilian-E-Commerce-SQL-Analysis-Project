@@ -19,7 +19,9 @@ FROM (
     GROUP BY customer_id
 ) AS customer_orders;
 ```
-
+**OUTPUT**
+<img width="266" height="79" alt="{538C0C75-E4FF-4134-A49E-DEF92D778932}" src="https://github.com/user-attachments/assets/d1223148-1140-480f-baeb-3196f18d244a" />
+---
 
 ## 2. What is the lifetime value of the top customers?
 Estimates total revenue contributed by the most valuable customers.
@@ -30,6 +32,7 @@ group by o.customer_id
 order by total_revenue desc
 limit 10;
 ```
+*OUTPUT*
 ---
 
 ## 3. Which product categories have high sales but low ratings?
@@ -43,6 +46,7 @@ on p.product_id=oi.product_id
 group by product_category_name
 order by revenue desc , rating asc;
 ```
+*OUTPUT*
 ---
 
 ## 4. How does delivery time affect customer satisfaction?
@@ -69,4 +73,4 @@ o.order_id=p.order_id
 group by c.customer_state
 order by revenue_state desc;
 ```
-
+*OUTPUT*
