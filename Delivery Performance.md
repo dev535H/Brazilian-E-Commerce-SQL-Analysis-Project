@@ -52,6 +52,7 @@ FROM orders
 WHERE order_delivered_customer_date IS NOT NULL;
 ```
 **OUTPUT**
+<img width="243" height="98" alt="{9305D4E1-7FFD-49EB-B257-5D6E93289929}" src="https://github.com/user-attachments/assets/525fc733-8265-4d46-8579-d87c36db315b" />
 
 ---
 ## 5. What is the average freight cost per order?
