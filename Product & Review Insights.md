@@ -60,8 +60,14 @@ order by delay desc;
 ## 5. What percentage of orders received a 5-star rating?
 Indicates how often customers had an excellent experience.
 ```sql
-
+select 
+    round(
+        100.0 * sum(case when review_score = 5 then 1 else 0 end) 
+        / count(distinct order_id),
+    2) as five_star_percentage
+from reviews;
 ```
 **OUTPUT**
+<img width="245" height="93" alt="{37EB7E27-8A79-4520-B404-9075EF871BAC}" src="https://github.com/user-attachments/assets/a80a6c10-cfa1-4f80-b2b6-77abab38627c" />
 
 ---
