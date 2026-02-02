@@ -26,7 +26,8 @@ order by sum(payment_value)
 desc limit 10;
 ```
 **OUTPUT**
-<img width="281" height="548" alt="{9687ABED-150C-422C-971A-1379B175FF63}" src="https://github.com/user-attachments/assets/75c51ac2-0517-42aa-b069-173c1a275305" />
+<img width="478" height="366" alt="{3A42A2D3-CB1E-44B0-8FD8-0858CA657430}" src="https://github.com/user-attachments/assets/152b605b-32ec-42da-a8b2-27a34fce3156" />
+
 
 ---
 ## 4.Which product categories generate the most revenue? 
