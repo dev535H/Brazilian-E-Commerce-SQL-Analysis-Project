@@ -22,7 +22,8 @@ order by highest_category_review desc
 limit 1;
 ```
 **OUTPUT**
-<img width="435" height="91" alt="{DA4DAB27-5A78-4507-A602-9B5962A9BD21}" src="https://github.com/user-attachments/assets/73ad4a2e-9ef7-4687-9257-a5a72dc024ba" />
+<img width="465" height="101" alt="{358C386A-9FE4-477D-A703-3C7A13763C0B}" src="https://github.com/user-attachments/assets/34ea5914-ab26-4dd6-b2aa-7f7758e9b11e" />
+
 
 ---
 ## 3. Which product categories receive the lowest ratings?
