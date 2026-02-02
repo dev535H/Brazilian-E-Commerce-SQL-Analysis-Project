@@ -46,9 +46,15 @@ limit 1;
 ## 4. Do delayed deliveries lead to lower review scores?
 Analyzes the relationship between delivery performance and customer satisfaction.
 ```sql
-
+select extract(day from (o.order_delivered_customer_date-o.order_estimated_delivery_date)) as delay,round(avg(r.review_score),2) as reviews from
+orders o join reviews r
+on o.order_id=r.order_id
+where extract(day from o.order_delivered_customer_date-o.order_estimated_delivery_date) is not null
+group by delay
+order by delay desc;
 ```
 **OUTPUT**
+<img width="249" height="415" alt="{DE254F86-0A5F-4AE9-B76F-ED2D688906C2}" src="https://github.com/user-attachments/assets/d38cf856-85ff-451f-858e-98e03b0a7a6a" />
 
 ---
 ## 5. What percentage of orders received a 5-star rating?
