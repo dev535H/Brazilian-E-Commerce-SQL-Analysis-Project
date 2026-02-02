@@ -28,7 +28,6 @@ desc limit 10;
 **OUTPUT**
 <img width="478" height="366" alt="{3A42A2D3-CB1E-44B0-8FD8-0858CA657430}" src="https://github.com/user-attachments/assets/152b605b-32ec-42da-a8b2-27a34fce3156" />
 
-
 ---
 ## 4.Which product categories generate the most revenue? 
 Helps understand which types of products drive the business the most.
@@ -43,7 +42,7 @@ order by sum(oi.price+freight_value) desc
 limit 1;
 ```
 **OUTPUT**
-<img width="281" height="548" alt="{9687ABED-150C-422C-971A-1379B175FF63}" src="https://github.com/user-attachments/assets/75c51ac2-0517-42aa-b069-173c1a275305" />
+<img width="393" height="90" alt="{0FC64F25-8FBC-4791-BC57-AD5DD79E7C2B}" src="https://github.com/user-attachments/assets/a5f418a9-9d64-45ea-813a-cd26746a8475" />
 
 ---
 ## 5. What is the monthly sales trend over time? 
