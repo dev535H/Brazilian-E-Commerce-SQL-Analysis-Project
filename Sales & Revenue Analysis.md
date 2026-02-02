@@ -68,5 +68,6 @@ order by total_revenue desc
 limit 1;
 ```
 **OUTPUT**
-![](screenshots/MONTLY SALES OVER TREND.png)
+<img width="274" height="84" alt="{E715F722-FD1C-4E35-854B-135B59503E97}" src="https://github.com/user-attachments/assets/b0cbb971-c030-4297-9be6-ca58da0e603b" />
+
 
